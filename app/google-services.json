@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642458020059",
+    "project_id": "livrosfirebase-5162b",
+    "storage_bucket": "livrosfirebase-5162b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642458020059:android:b662eb21a4cd46ecc244fe",
+        "android_client_info": {
+          "package_name": "com.rn.livros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBELaBNa-MelzFtD5_nAAQJ7PUIOwqo4QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
