@@ -45,18 +45,23 @@ android {
 
 }
 
-val glide_version = "4.16.0"
-val parceler_version = "1.1.12"
-val bom_version = "32.8.1"
-val auth_version = "22.1.2"
-val services_version = "4.3.15"
-val core_version = "1.13.0"
-val app_compat_version = "1.6.1"
-val material_version = "1.11.0"
-val constraint_layout_version = "2.1.4"
-val junit_version = "4.13.2"
-val test_junit_version = "1.1.5"
-val espresso_core_version = "3.5.1"
+    val glide_version = "4.16.0"
+    val parceler_version = "1.1.12"
+    val bom_version = "32.8.1"
+    val auth_version = "22.1.2"
+    val services_version = "4.3.15"
+    val core_version = "1.13.0"
+    val app_compat_version = "1.6.1"
+    val material_version = "1.11.0"
+    val constraint_layout_version = "2.1.4"
+    val junit_version = "4.13.2"
+    val test_junit_version = "1.1.5"
+    val espresso_core_version = "3.5.1"
+    val firestore_version = "24.8.1"
+    val lifecycle_version="2.5.1"
+    val storage_version = "20.2.1"
+    val crashlytics_version = "18.4.3"
+    val crashlytics_gradle = "2.9.5"
 
 dependencies {
 
@@ -76,6 +81,23 @@ dependencies {
 
     implementation("com.google.firebase:firebase-auth-ktx:$auth_version")
     implementation("com.google.gms:google-services:$services_version")
+    implementation("com.google.firebase:firebase-firestore-ktx:$firestore_version")
+    implementation("com.google.firebase:firebase-storage-ktx:$storage_version")
+    implementation("com.google.firebase:firebase-crashlytics-ktx:$crashlytics_version")
+    implementation("com.google.firebase:firebase-crashlytics-gradle:$crashlytics_gradle")
+    implementation("com.crashlytics.sdk.android:crashlytics:2.10.1")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+
+    kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
 
     testImplementation("junit:junit:$junit_version")
     androidTestImplementation("androidx.test.ext:junit:$test_junit_version")
